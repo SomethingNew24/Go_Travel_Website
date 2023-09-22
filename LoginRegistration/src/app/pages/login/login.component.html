@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="alert alert-success" role="alert">
+    Login Successfull<a href="" style="cursor: pointer;" >Forget Password?</a>
+  </div>
+  <form [formGroup]="loginForm">
+    <div class="form-group">
+      <input type="email" class="input-field" placeholder="Email" formControlName="email">
+      <input type="password" class="input-field" placeholder="Password" formControlName="password">
+      <input type="checkbox" class="checkbox"><span>I agree to the terms&conditions</span>
+      <button type="submit" class="submit-btn" (click)="login()">Login</button>
+    </div>
+  </form>
+</div>

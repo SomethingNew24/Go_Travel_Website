@@ -1,0 +1,15 @@
+<div class="container">
+  <div [ngClass]="className" role="alert">
+  {{message}} <a routerLink="/login" style="cursor: pointer;" >Login Here</a>
+  </div>
+  <form [formGroup]="signupForm">
+    <div class="form-group">
+      <input type="text" class="input-field" placeholder="Fisrt Name" formControlName="firstname">
+      <input type="text" class="input-field" placeholder="Last Name" formControlName="lastname" >
+      <input type="email" class="input-field" placeholder="Email" formControlName="email">
+      <input type="password" class="input-field" placeholder="Password" formControlName="password">
+      <input type="checkbox" class="checkbox"><span>I agree to the terms&conditions</span>
+      <button type="submit" class="submit-btn" (click)="signup()">Register</button>
+    </div>
+  </form>
+</div>
